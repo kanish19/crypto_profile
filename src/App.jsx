@@ -90,7 +90,7 @@ const App = () => {
           <div className="w-10 h-10 bg-gradient-to-tr from-cyan-400 to-purple-600 rounded-xl flex items-center justify-center shadow-neon">
             <TrendingUp className="text-black w-6 h-6" />
           </div>
-          <h1 className="text-2xl font-bold tracking-tight text-white outfit">Crypto<span className="text-cyan-400">Sphere</span></h1>
+          <h1 className="text-2xl font-bold tracking-tight text-white outfit">Crypto</h1>
         </div>
 
         <div className="flex gap-4 md:gap-8 overflow-x-auto pb-2 md:pb-0 no-scrollbar">
@@ -167,7 +167,7 @@ const App = () => {
                     <Card className="group relative overflow-hidden flex items-center justify-between hover:border-cyan-500/30 p-4">
                       <div className="flex items-center gap-4">
                         <div className="relative">
-                          <img src={coin.image} alt={coin.name} className="w-12 h-12 rounded-full bg-white/5" />
+                          <img src={coin.image} alt={coin.name} className="w-8 h-8 rounded-full bg-white/5" />
                           <div className="absolute -bottom-1 -right-1 bg-black rounded-full p-0.5 border border-white/10 group-hover:border-cyan-500/50 transition-colors">
                             <div className="text-[10px] font-bold px-1 text-white uppercase">{coin.symbol}</div>
                           </div>
@@ -224,7 +224,7 @@ const App = () => {
                   <div key={item.id} className="p-4 hover:bg-white/5 transition-colors group">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center gap-3">
-                        <img src={item.image} alt={item.name} className="w-8 h-8 rounded-full" />
+                        <img src={item.image} alt={item.name} className="w-6 h-6 rounded-full" />
                         <div>
                           <div className="font-bold">{item.name}</div>
                           <div className="text-xs text-[#64748b]">{item.quantity} {item.symbol.toUpperCase()}</div>
@@ -290,7 +290,7 @@ const App = () => {
             >
               <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center gap-4">
-                  <img src={selectedCoin?.image} className="w-12 h-12" alt="" />
+                  <img src={selectedCoin?.image} className="w-10 h-10" alt="" />
                   <div>
                     <h2 className="text-2xl font-bold outfit">Add {selectedCoin?.name}</h2>
                     <p className="text-[#64748b] text-sm">Portfolio entry</p>
@@ -335,7 +335,7 @@ const App = () => {
 
       {/* Footer Decoration */}
       <footer className="mt-20 py-8 border-t border-white/5 text-center">
-        <p className="text-[#64748b] text-sm font-medium">Powered by <span className="text-white">CoinGecko API</span> &bull; 2026 CryptoSphere</p>
+        <p className="text-[#64748b] text-sm font-medium">Powered by <span className="text-white">CoinGecko API</span> &bull; 2026 Crypto</p>
       </footer>
     </div>
   );
